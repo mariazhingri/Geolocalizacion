@@ -5,8 +5,7 @@
 <title>Mi ubicación GPS</title>
 </head>
 <body>
- <h1 style="color:blue; >Mi ubicación Actual es:</h1>
- <h1 style="color:blue; id="location">Cargando ubicación...</h1>
+ <h1 id="location">Cargando ubicación...</h1>
 <script>
 if (navigator.geolocation) {
  navigator.geolocation.getCurrentPosition(function(position) {
@@ -22,7 +21,6 @@ if (navigator.geolocation) {
 "Lo siento, tu navegador no soporta la ubicación GPS.";
 }
 </script>
-<p style="color:red; id="location">esta es mi ubicacion actual</p>
 <script>
 </body>
 </html>
